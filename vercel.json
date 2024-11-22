@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "_output/**/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/_output/$1"
+      }
+    ]
+  }
+  
